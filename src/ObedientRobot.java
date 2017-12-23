@@ -9,9 +9,8 @@ public class ObedientRobot {
 	public static void main(String[] args) {
 		
 		Robot fred = new Robot();
-		fred.setSpeed(7);
-	//make rainbow, try to set hi to false, then if you select rainbow, it will set hi to true, and in the drawing area
-		//have something that will detect for true hi, and if hi is true, then have a special code that will add rainbows and will cycle thru the color using setcolor color.red ect
+		fred.setSpeed(10);
+	
 		String a = JOptionPane.showInputDialog("What shape do you want to paint?");
 		String b = JOptionPane.showInputDialog("What color do you want to use?");
 		
@@ -27,26 +26,10 @@ public class ObedientRobot {
 			fred.setPenColor(0, 0 , 255);
 			fred.penDown();
 		}
-		else if(b.equals("hi")) {
-			fred.penDown();
-			for (int j = 0; j < 5000; j++) {
-				System.out.println(j);
-				
-					fred.setPenColor(Color.red);
-					fred.penDown();
-				
-							}
-			for (int i = 0; i < 5000; i++) {
-			
-					
-				
-				fred.setPenColor(Color.ORANGE);
-				
-				
 
-			}
-		}
-		if(a+b.equals("square"+"hi"))
+			
+		
+		
 		if(a.equals("square")) {
 			for (int i = 0; i < 4; i++) {
 				fred.move(100);
